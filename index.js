@@ -7,16 +7,16 @@ http
   .createServer(function (req, res) {
     switch (req.url) {
       case "/":
-        sendHtmlPage("./pages/index.html", res);
+        sendHtmlPage("./index.html", res);
         break;
       case "/about":
-        sendHtmlPage("./pages/about.html", res);
+        sendHtmlPage("./about.html", res);
         break;
       case "/contact-me":
-        sendHtmlPage("./pages/contact-me.html", res);
+        sendHtmlPage("./contact-me.html", res);
         break;
       default:
-        sendHtmlPage("./pages/404.html", res);
+        sendHtmlPage("./404.html", res);
         break;
     }
   })
